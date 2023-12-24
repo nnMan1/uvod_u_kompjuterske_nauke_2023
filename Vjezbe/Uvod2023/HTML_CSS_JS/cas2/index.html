@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Ime i prezime: </label><input type="text" id="name">
+        </div>
+
+        <div>
+            <label>Smjer: </label>
+            <input type="radio" name="smjer" id="a-smjer" value="A" checked> <label for="a-smjer">A</label>
+            <input type="radio" name="smjer" id="b-smjer" value="B"> <label for="b-smjer">B</label>
+            <input type="radio" name="smjer" id="c-smjer" value="C"> <label for="c-smjer">C</label>
+            <input type="radio" name="smjer" id="d-smjer" value="D"> <label for="d-smjer">D</label>
+        </div>
+        <div>
+            <label for="index">Broj indeksa: </label><input type="text" id="index">
+        </div>
+        <button>OK</button>
+    </form>
+
+    <table>
+        <thead><tr><th>Ime</th><th>Prezime</th><th>Smjer</th> <th>Broj indeksa</th></tr></thead>
+        <tbody id="students-table-body">
+
+        </tbody>
+        <tfoot><tr><td>Ukupno:</td><td id="total-number-of-students">0</td></tr></tfoot>
+    </table>
+    </form>
+</body>
+</html>

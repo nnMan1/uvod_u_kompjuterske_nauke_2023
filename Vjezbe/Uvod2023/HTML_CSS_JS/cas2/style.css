@@ -1,0 +1,4 @@
+input[type='radio']:checked{
+    border: none;
+    outline: 2px solid deeppink;
+}

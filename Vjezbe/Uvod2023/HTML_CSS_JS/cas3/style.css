@@ -1,0 +1,33 @@
+body {
+    background-color: aqua;
+    color: whitesmoke;
+}
+
+li {
+    color: yellow;
+}
+
+#sec-rac-nauke {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.zuti-tekst {
+    background-color: yellow;
+    color: black;
+}
+
+.podvuceni-tekst {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px whitesmoke solid;
+}
+
+input[type='radio']:checked {
+    outline: 1px red solid;
+}
