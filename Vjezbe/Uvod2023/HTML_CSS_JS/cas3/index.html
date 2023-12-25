@@ -87,6 +87,11 @@
             </div>
 
             <div>
+                <label for="input-index">Broj Indeksa: </label>
+                <input id="input-index" type="text" placeholder="1/23">
+            </div>
+
+            <div>
             <label>Smjer: </label>
             
             <input id="input-smjer-a" type="radio" name="smejr" value="A"> 
@@ -110,7 +115,7 @@
             <div>
             <label for="select-predmet">Predmet: </label>
             <select name="" id="select-predmet">
-                <option value="Uvod u kompjuterske nauke">Uvod u kompjuterske nauke</option>
+                <option value="Uvod u kompjuterske nauke" disabled>Uvod u kompjuterske nauke</option>
                 <option value="Racunari i programiranje">Racunari i programiranje</option>
                 <option value="Analiza 1">Analiza 1</option>
                 <option value="Engleski 1">Engleski 1</option>
@@ -127,7 +132,16 @@
 
         <table>
             <thead>
-            <tr><th>Ime</th><th>Prezime</th><th>Smjer</th><th>Broj Indeksa</th><th>Finansiranje</th><th>Predmet</th></tr>
+            <tr><th>Ime</th><th>Prezime</th><th>Smjer <button onclick="(() => {
+                clearTable();
+                sortirajPrijave('smjer');
+                fillTable(prijave);
+            })()">sort</button></th><th>Broj Indeksa</th><th>Finansiranje</th><th>Predmet <button onclick="(() => {
+                clearTable();
+                sortirajPrijave('predmet');
+                fillTable(prijave);
+            })()">sort</button></th>
+            <th>Ukloni</th></tr>
             </thead>
 
             <tbody>
@@ -140,34 +154,7 @@
             </tfoot>
         </table>
 
-        <script>
-            function submit(e) {
-                e.preventDefault();
-
-                let imePrezime = document.querySelector('#input-ime-prezime').value;
-                smjer = document.querySelector("input[type='radio']:checked").value;
-                budzet = document.querySelector('#budzet').checked; 
-
-                predmentSelector = document.querySelector('#select-predmet');
-                predmetIndex = predmentSelector.selectedIndex;
-                selectedPredemet = predmentSelector.options[predmetIndex];
-                predmetIme = selectedPredemet.value;
-
-                tabela = document.querySelector('tbody');
-                tabelaRed = document.createElement('tr');
-
-                let imePrezimeNiz = imePrezime.split(' ');
-                cellIme = document.createElement('td');
-                cellIme.innerHTML = imePrezimeNiz[0];
-                tabelaRed.appendChild(cellIme);
-
-                tabela.appendChild(tabelaRed);               
-            }
-
-            btn = document.querySelector('#button-submit');
-            btn.addEventListener('click', submit)
-
-        </script>
+        <script src="main.js"></script>
     
     </body>
 </html>
