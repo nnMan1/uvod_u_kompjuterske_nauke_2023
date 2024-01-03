@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div>
+        <!-- <img src="https://www.ucg.ac.me/tumber.php?src=/skladiste/blog_4/objava_20/karusel/UCG%202.jpg&h=1000" alt="" width="200em"> -->
+        <a href="https://www.ucg.ac.me">
+        <img src="logo.png" alt="">
+        </a>
+        <h1><a href="https://www.ucg.ac.me">Univerzitet Crne Gore</a></h1>
+        <h2><a href="fakulteti/pmf.html">Prirodno-matematički fakultet</a></h2>
+        </div>
+
+        <nav>
+            <ol id="lista-smjerova" class="klasa-jedan klasa-dva" start="5">
+                <li>Matematika
+                    <ul>
+                        <li>Teorijska matematika</li>
+                        <li>Finansijska matematika</li>
+                        <li>Matematicko modeliranje</li>
+                        <li>Nastavni smjer</li>
+                    </ul>
+                </li>
+                <li>Matematika i računarske nauke</li>
+                <li><a href="#sec-rac-nauke">Računarske nauke</a></li>
+                <li>Računarstvo i informacione tehnologije</li>
+            </ol>
+        </nav>
+
+        <h3>Matematika</h3>
+        <p>
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            <!-- Ovo je komentar. 
+                On neutice na prikaz stranice -->
+            Ovo je neka stranica. <span class="zuti-tekst">Ovo je dio teksta zute boje.</span>
+            <span class="podvuceni-tekst">Ovaj dio teksat ce da bude podvucen.</span>Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. <span class="zuti-tekst podvuceni-tekst"> Ovo je neka stranica.</span>
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+        </p>
+
+        <h3>Matematika i racunarske nauke</h3>
+        <p>
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+        </p>
+
+        <h3 id="sec-rac-nauke">Računarske nauke</h3>
+        <p>
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+        </p>
+
+        <h3>Računarstvo i informacione tehnologije</h3>
+        <p>
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+            Ovo je neka stranica. Ovo je neka stranica.
+        </p>
+
+        <h2>Prijava ispita</h2>
+
+        <form>
+            <div>
+                <label for="input-ime-prezime">Ime i prezime: </label>
+                <input id="input-ime-prezime" type="text">
+            </div>
+
+            <div>
+                <label for="input-broj-indeksa">Broj indeksa: </label>
+                <input id="input-broj-indeksa" type="text" placeholder="1/23">
+            </div>
+
+            <div>
+            <label>Smjer: </label>
+            
+            <input id="input-smjer-a" type="radio" name="smejr" value="A"> 
+            <label for="input-smjer-a">A</label>
+
+            <input id="input-smjer-b" type="radio" name="smejr" value="B"> 
+            <label for="input-smjer-b">B</label>
+
+            <input id="input-smjer-c" type="radio" name="smejr" value="C"> 
+            <label for="input-smjer-c">C</label>
+
+            <input id="input-smjer-d" type="radio" name="smejr" value="D"> 
+            <label for="input-smjer-d">D</label>
+            </div>
+
+            <div>
+                <label for="budzet">Budzet:</label>
+                <input id="budzet" type="checkbox">
+            </div>
+
+            <div>
+            <label for="select-predmet">Predmet: </label>
+            <select name="" id="select-predmet">
+                <option value="Uvod u kompjuterske nauke" disabled>Uvod u kompjuterske nauke</option>
+                <option value="Racunari i programiranje">Racunari i programiranje</option>
+                <option value="Analiza 1">Analiza 1</option>
+                <option value="Engleski 1">Engleski 1</option>
+                <option value="Uvod u matematicku logikuku logiku">Uvod u matematicku logiku</option>
+            </select>
+            </div>
+
+            <div>
+                <button id="button-submit">Prijavi</button>
+                <input type="button" value="Odustani">
+            </div>
+
+        </form>
+
+        <table>
+            <thead>
+            <tr><th>Ime</th><th>Prezime</th><th>Smjer <button onclick="sortTableByAttribute('department')">sort</button></th><th>Broj Indeksa <button onclick="sortTableByAttribute('index')">sort</button></th><th>Finansiranje</th><th>Predmet <button onclick="sortTableByAttribute('subject')">sort</button></th></tr>
+            </thead>
+
+            <tbody>
+                <tr><td rowspan="2">Marko</td><td>Markovic</td><td>C</td><td>15/23</td><td>Budzet</td><td>Uvod u kompjuterske nauke</td></tr>
+                <tr><td>Jovovic</td><td>C</td><td>16/23</td><td>Budzet</td><td>Analiza 1</td></tr>
+            </tbody>
+
+            <tfoot>
+                <tr><td>Ukupno: </td><td id="number-of-students" colspan="5">2</td></tr>
+            </tfoot>
+        </table>
+    
+    </body>
+</html>

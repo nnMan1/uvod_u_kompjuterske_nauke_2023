@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="logo-container"></div>
+            <h1>Univerzitet Crne Gore</h1>
+            <h2>Prirodno-matematicki fakultet</h2>
+        </header>
+        
+        <h3>H3 podnaslov</h3>
+        <h4>H4 podnaslov</h4>
+        <nav>
+            <ul>
+                <li>Matematika
+                    <ol start="5">
+                        <li>Analiza 1</li>
+                        <li>Linearna algebra</li>
+                        <li>Racunari i programiranje</li>
+                        <li>Uvod u matematicku logiku</li>
+                    </ol>
+                </li>
+                <li>Matematika i racunarske nauke</li>
+                <li>Racunarske nauke</li>
+                <li>Racunarstvo i inforamcione tehnologije</li>
+            </ul>
+        </nav>
+        <div>
+            <p id="p1">
+                Ovo <span class="yellow-background">je neki</span> tekst.
+                Ovo <span>je neki</span> tekst.
+                Ovo <span>je neki</span> tekst.
+                Ovo <span class="yellow-background">je neki</span> tekst.
+                Ovo <span>je neki</span> tekst.
+            </p>
+        </div>
+
+        <form>
+            <div>
+                <label for="input-ime">Ime i prezime: </label>
+                <input id="input-ime" type="text">
+            </div>
+
+            <div>
+                <label>Smjer: </label>
+                <label for="input-radio-smjer-a">A</label>
+                <input id="input-radio-smjer-a" type="radio" name="smjer" value="A" checked >
+                
+                <label for="input-radio-smjer-b">B</label>
+                <input id="input-radio-smjer-b" type="radio" name="smjer" value="B">
+                
+                <label for="input-radio-smjer-c">C</label>
+                <input id="input-radio-smjer-c" type="radio" name="smjer" value="C">
+                
+                <label for="input-radio-smjer-d">D</label>
+                <input id="input-radio-smjer-d" type="radio" name="smjer" value="D">
+            </div>
+
+            <div>
+                <label for="input-checkbox-budzet">Student na budzetu: </label>
+                <input id="input-checkbox-budzet" type="checkbox" name="budzet" checked>
+            </div>
+
+            <div>
+                <label for="input-br-index">Broj indeksa: </label><input id="input-br-index" type="number">
+                <label for="input-god_upisa">Godina upisa: </label><input type="number" id="input-god_upisa">
+            </div>
+
+            <div>
+                <label for="select-predmet">Predmet: </label>
+                <select name="" id="select-predmet">
+                    <option value="rip">Racunari i programiranje</option>
+                    <option value="ukn" selected>Uvod u kompjuterske nauke</option>
+                    <option value="mat1">Matematika 1</option>
+                </select>
+            </div>
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+
+        <table>         
+            <thead>   
+            <tr><th>Ime <button onclick="sortirajStudente('ime');">sort</button></th><th>Prezime <button onclick="sortirajStudente('prezime');">sort</button></th><th>Smjer <button onclick="sortirajStudente('smjer');">sort</button></th><th>Broj indeksa</th><th>Ukloni</th></tr>
+            </thead>
+            <tfoot>
+                <tr><td>Ukupno:</td> <td colspan="4" id="total-students-number">0</td> </tr>
+            </tfoot>
+            <tbody></tbody>
+        </table>
+    </body>
+</html>

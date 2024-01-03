@@ -1,0 +1,35 @@
+#logo-container {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+td {
+    border: 2px solid whitesmoke;
+}
+
+.yellow-background {
+    background-color: yellow;
+}
+
+.blue-text {
+    color: blue;
+}
+
+span.yellow-background {
+    text-decoration: underline;
+}
+
+input[type='radio']:checked {
+    outline: 2px red solid;
+}
